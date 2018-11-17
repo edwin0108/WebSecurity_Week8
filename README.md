@@ -18,12 +18,13 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 Vulnerability #1 - SQL Injection (SQLi):  <br />
 * In "salesperson" page, attackers can perform a time delay attack to the database by typing salesperson.php?id=1' or sleep(5)=1--' 
-<br />
 GIF Walkthrough: <br />
-<img src="https://github.com/wrongjun/websecurity_week8/blob/master/blue_sql.gif" width="700">
+<img src="https://github.com/edwin0108/WebSecurity_Week8/blob/master/blue_SQLATTACK.gif" width="700">
 
-Vulnerability #2: __________________
-
+Vulnerability #2 -  Session Hijacking/Fixation:  <br />
+* Since all websites within the blue side are sharing the same session id for login, attackers can get the session id after login and reuse the session id on other browser as logged in user.
+GIF Walkthrough: <br />
+<img src="https://github.com/edwin0108/WebSecurity_Week8/blob/master/blue_SESSION.gif" width="700">
 
 ## Green
 
