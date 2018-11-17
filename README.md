@@ -1,6 +1,6 @@
 # Project 8 - Pentesting Live Targets
 
-Time spent: **X** hours spent in total
+Time spent: 5 hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -16,7 +16,11 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-Vulnerability #1: __________________
+Vulnerability #1 - SQL Injection (SQLi):  <br />
+* In "salesperson" page, attackers can perform a time delay attack to the database by typing salesperson.php?id=1' or sleep(5)=1--' 
+<br />
+GIF Walkthrough: <br />
+<img src="https://github.com/wrongjun/websecurity_week8/blob/master/blue_sql.gif" width="700">
 
 Vulnerability #2: __________________
 
