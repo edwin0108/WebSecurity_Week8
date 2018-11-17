@@ -28,18 +28,29 @@ GIF Walkthrough: <br />
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1 - Username Enumeration: <br />
+* The green site expose the correctness of the user name, letting attackers can brute force all the combination of the user info stores in this site. For instances:
+     - If the username is accurate, with the user name pperson
+        **Log in was unsuccessful**
+     - If the username is not a user,
+        *Log in was unsuccessful*
+GIF Walkthrough: <br />
+<img src="https://github.com/edwin0108/WebSecurity_Week8/blob/master/green_USERNAME_EM.gif" width="700">
 
-Vulnerability #2: __________________
-
+Vulnerability #2 - Cross-Site Scripting (XSS): <br />
+* Under the contact option, the feedback textbox is allow to type in a script, attackers can use this vulnerability and perform advance hacking with this, in this example I just entered \<script\>alert('You have been hacked!');\</script\> <br />
+GIF Walkthrough: <br />
+<img src="https://github.com/edwin0108/WebSecurity_Week8/blob/master/green_XSS.gif" width="700">
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1 - Insecure Direct Object Reference (IDOR): <br />
+* Under the salesperson page: https://35.184.88.145/red/public/salesperson.php?id=X, I can change X to any id that is exist, after that I can change "red" to some other site such as "green" or "blue", but these are private page and should not be shared across different sites. Therefore a protect route is needed.
+GIF Walkthrough: <br />
+<img src="https://github.com/edwin0108/WebSecurity_Week8/blob/master/red_IDOR.gif" width="700">
 
-Vulnerability #2: __________________
+Vulnerability #2 -  Cross-Site Request Forgery (CSRF)
+* Red site does not required a CSRF token to perform any modification within user's information. After attacker login as admin, they can  edit the user's information.
+GIF Walkthrough: <br />
+<img src="https://github.com/edwin0108/WebSecurity_Week8/blob/master/red_CSRF.gif" width="700">
 
-
-## Notes
-
-Describe any challenges encountered while doing the work
